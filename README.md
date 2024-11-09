@@ -1,1 +1,1 @@
-# second time to trying this session
+# making conflict for fun not for study
