@@ -1,12 +1,12 @@
 name: CI/CD with Docker
 
 on:
-push:
-branches:
-  - main
-pull_request:
-branches:
-  - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
   build-and-test:
@@ -20,7 +20,7 @@ jobs:
     # step 2: Set up Node.js environment
     - name: Set up Node.js
     uses: actions/setup-node@v3
-    with:
+     with:
       node-version: '22'
 
     # Step 3: Install dependencies and run tests
